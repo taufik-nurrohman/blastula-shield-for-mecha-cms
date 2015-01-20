@@ -1,0 +1,200 @@
+html, body {
+  margin:0;
+  padding:0;
+}
+
+body {padding:50px}
+
+button,
+input,
+select,
+textarea {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+nav {
+  display:block;
+  height:2em;
+  line-height:2em;
+  margin:1em 0;
+}
+
+nav ul,
+nav li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+nav li {
+  float:left;
+  display:inline;
+  position:relative;
+  margin:0 1em 0 0;
+}
+
+nav a {display:block}
+
+nav li ul {
+  width:120px;
+  position:absolute;
+  top:100%;
+  left:0;
+  z-index:999;
+  display:none;
+}
+
+nav li ul ul {
+  top:0;
+  left:100%;
+}
+
+nav li li {
+  float:none;
+  display:block;
+  margin:0;
+}
+
+nav li:hover > ul {display:block}
+
+article {margin:3em 0}
+
+
+/**
+ * These are required for the backend layout.
+ * You can move them to `shell/manager.css` if you have to.
+ */
+
+.code {font-family:Monospace}
+
+.btn-block,
+.input-block,
+.select-block,
+.textarea-block {
+  display:block;
+  width:100%;
+}
+
+.no-appearance,
+a.no-appearance,
+button.no-appearance,
+input.no-appearance,
+select.no-appearance,
+textarea.no-appearance {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  margin:0;
+  padding:0;
+  border:none;
+  background:none;
+  outline:none;
+  font:inherit;
+  color:inherit;
+  text-align:inherit;
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  border-radius:0;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow:none;
+}
+
+.form-label,
+.form-static {
+  display:block;
+  line-height:normal;
+}
+
+.form-label {text-align:right}
+
+.no-gap .form-label > span {
+  display:block;
+  padding-right:1em;
+}
+
+.hidden {display:none}
+
+.hidden-visually,.sr {
+  position:absolute !important;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  clip:rect(0px,0px,0px,0px);
+  height:1px;
+  width:1px;
+  margin:-1px 0 0;
+  padding:0;
+  border:0;
+}
+
+.cf,
+.fluid-media,
+.fluid-video,
+.grid-group {
+  display:block;
+  cursor:inherit;
+  zoom:1;
+}
+
+.cf:after,
+.grid-group:after {
+  content:" ";
+  display:table;
+  clear:both;
+}
+
+.cl {
+  display:block;
+  clear:both;
+}
+
+.grid {
+  min-height:1px;
+  float:left;
+  margin-left:4.349%;
+}
+
+.grid:first-child {margin-left:0}
+
+.span-1 {width:13.043%}
+.span-2 {width:30.434%}
+.span-3 {width:47.826%}
+.span-4 {width:65.217%}
+.span-5 {width:82.608%}
+.span-6 {width:100%}
+
+.no-gap .grid {margin-left:0}
+
+.no-gap .span-1 {width:16.666%}
+.no-gap .span-2 {width:33.333%}
+.no-gap .span-3 {width:50%}
+.no-gap .span-4 {width:66.666%}
+.no-gap .span-5 {width:83.333%}
+.no-gap .span-6 {width:100%}
+
+.pull-left,
+.align-left {float:left}
+
+.pull-right,
+.align-right {float:right}
+
+.align-left {margin:.5em 1em .5em 0}
+.align-right {margin:.5em 0 .5em 1em}
+
+.align-center {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+.align-top {vertical-align:top}
+.align-bottom {vertical-align:bottom}
+.align-middle {vertical-align:middle}
+
+.text-left {text-align:left}
+.text-right {text-align:right}
+.text-center {text-align:center}
+.text-justify {text-align:justify}

@@ -8,6 +8,8 @@
     <div><?php Weapon::fire('article_footer', array($article)); ?></div>
   </footer>
 </article>
-<p><?php echo $pager->prev->link; ?> | <?php echo $pager->next->link; ?></p>
+<p>
+  <?php echo ! empty($pager->prev->link) ? $pager->prev->link : $speak->newer; ?> &middot; <?php echo ! empty($pager->next->link) ? $pager->next->link : $speak->older; ?>
+</p>
 <?php if($config->comments) include 'comments.php'; ?>
 <?php include 'footer.php'; ?>

@@ -5,15 +5,13 @@
     <?php foreach($article->comments as $comment): ?>
     <li>
       <?php if( ! empty($comment->url) && $comment->url != '#'): ?>
-      <h5><a href="<?php echo $comment->url; ?>" rel="nofollow" target="_blank"><?php echo $comment->name; ?></a></h5>
+      <p><strong><a href="<?php echo $comment->url; ?>" rel="nofollow" target="_blank"><?php echo $comment->name; ?></a></strong></p>
       <?php else: ?>
-      <h5><?php echo $comment->name; ?></h5>
+      <p><strong><?php echo $comment->name; ?></strong></p>
       <?php endif; ?>
       <div><?php echo $comment->message; ?></div>
-      <div><?php echo $comment->date->FORMAT_1; ?></div>
-      <footer class="media-footer">
-        <?php Weapon::fire('comment_footer', array($comment, $article)); ?>
-      </footer>
+      <p><?php echo $comment->date->FORMAT_1; ?></p>
+      <p><?php Weapon::fire('comment_footer', array($comment, $article)); ?></p>
     </li>
     <?php endforeach; ?>
     <?php endif; ?>

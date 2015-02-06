@@ -1,3 +1,6 @@
+    <?php if($manager): ?>
+    <?php echo Widget::manager(); ?>
+    <?php endif; ?>
     </section>
     <footer>
       <p>&copy; <a href="<?php echo $config->url; ?>"><?php echo $config->title; ?></a></p>

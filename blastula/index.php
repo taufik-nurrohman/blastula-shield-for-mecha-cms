@@ -13,5 +13,5 @@
   <p>No posts yet.</p>
 </article>
 <?php endif; ?>
-<p><?php echo $pager->prev->link; ?> | <?php echo $pager->next->link; ?></p>
+<p><?php echo $pager->step->link; ?></p>
 <?php include 'footer.php'; ?>

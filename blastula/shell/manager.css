@@ -136,7 +136,7 @@ textarea.no-appearance {
 .text-center {text-align:center}
 .text-justify {text-align:justify}
 
-.input-wrapper {
+.form-upload .input-outer {
   display:inline-block;
   height:1em;
   line-height:inherit;

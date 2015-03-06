@@ -73,3 +73,11 @@ nav li li {
 nav li:hover > ul {display:block}
 
 article {margin:3em 0}
+
+.align-left {margin:.5em 1em .5em 0}
+.align-right {margin:.5em 0 .5em 1em}
+
+.table-bordered {border-collapse:collapse}
+
+.table-bordered th,
+.table-bordered td {border:1px solid}

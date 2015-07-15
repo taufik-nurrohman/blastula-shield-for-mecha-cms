@@ -7,7 +7,7 @@
     </footer>
     <?php Weapon::fire('cargo_after'); ?>
     <?php Weapon::fire('sword_before'); ?>
-    <?php echo Asset::javascript('assets/sword/default.js'); ?>
+    <?php echo Asset::javascript('assets/sword/main.js'); ?>
     <?php Weapon::fire('sword_after'); ?>
     <?php Weapon::fire('SHIPMENT_REGION_BOTTOM'); ?>
   </body>

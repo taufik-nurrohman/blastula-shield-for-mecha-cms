@@ -29,7 +29,7 @@
     <p>Message:</p>
     <p><textarea name="message"><?php echo Guardian::wayback('message'); ?></textarea></p>
     <?php Weapon::fire('comment_form_input', array($article)); ?>
-    <p><?php echo Guardian::math(); ?> = <input name="math" type="text" style="width:4em;" value="" autocomplete="off"></p>
+    <p><?php echo Guardian::math(); ?> = <input name="math" type="text" value="" autocomplete="off"></p>
     <p><button type="submit">Submit</button></p>
     <p><?php echo $speak->comment_guide; ?></p>
   </form>

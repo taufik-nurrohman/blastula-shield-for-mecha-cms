@@ -5,4 +5,8 @@ Version: 0.0.0
 
 ====
 
-Belum lahir.
+> Belum lahir.
+
+Untuk semua orang yang menganggap bahwa tameng [Normal]({{url.manager}}shield/normal "Tameng Normal") itu berlebihan dan terlalu rumit.
+
+<!-- block:donate -->

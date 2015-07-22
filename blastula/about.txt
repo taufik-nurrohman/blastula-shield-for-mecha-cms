@@ -5,4 +5,8 @@ Version: 0.0.0
 
 ====
 
-Unborn.
+> Unborn.
+
+For all those who think that [Normal]({{url.manager}}shield/normal "Normal Shield") shield was excessive and too complicated.
+
+<!-- block:donate -->

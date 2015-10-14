@@ -1,38 +1,3 @@
-html,
-body {
-  margin:0;
-  padding:0;
-}
-
-body {
-  padding:50px;
-  background-color:white;
-  color:black;
-}
-
-a {
-  color:blue;
-  text-decoration:none;
-}
-
-a:focus,
-a:hover {
-  color:blue;
-  text-decoration:underline;
-}
-
-button,
-input,
-select,
-textarea {
-  font:inherit;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
-}
-
-textarea {resize:vertical}
-
 nav {
   display:block;
   height:2em;
@@ -58,7 +23,6 @@ nav a {display:block}
 
 nav li ul {
   width:120px;
-  background-color:white;
   position:absolute;
   top:100%;
   left:0;
@@ -80,7 +44,6 @@ nav li li {
 nav li:hover > ul {display:block}
 
 article {margin:3em 0}
-footer {margin:3em 0 0}
 
 .align-left {margin:.5em 1em .5em 0}
 .align-right {margin:.5em 0 .5em 1em}

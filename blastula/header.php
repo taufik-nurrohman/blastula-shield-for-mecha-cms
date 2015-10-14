@@ -3,7 +3,10 @@
   <head>
     <?php Weapon::fire('SHIPMENT_REGION_TOP'); ?>
     <?php Weapon::fire('shell_before'); ?>
-    <?php echo Asset::stylesheet('assets/shell/layout.css'); ?>
+    <?php echo Asset::stylesheet(array(
+        'assets/shell/atom.css',
+        'assets/shell/layout.css'
+    )); ?>
     <?php Weapon::fire('shell_after'); ?>
   </head>
   <body>

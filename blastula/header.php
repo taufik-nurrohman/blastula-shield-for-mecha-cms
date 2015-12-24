@@ -12,7 +12,7 @@
   <body>
     <?php Weapon::fire('cargo_before'); ?>
     <header>
-      <?php if($config->url_current == $config->url): ?>
+      <?php if($config->url_current === $config->url): ?>
       <h1><?php echo $config->title; ?></h1>
       <?php else: ?>
       <h1><a href="<?php echo $config->url; ?>"><?php echo $config->title; ?></a></h1>
@@ -20,4 +20,4 @@
       <p><?php echo $config->slogan; ?></p>
     </header>
     <section>
-      <nav><?php echo Menu::get(); ?></nav>
+      <nav><?php echo Menu::navigation(); ?></nav>

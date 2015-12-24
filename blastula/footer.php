@@ -1,5 +1,5 @@
     <?php if($manager): ?>
-    <?php echo Widget::manager(); ?>
+    <?php echo Widget::exist('manager') ? Widget::manager() : ""; ?>
     <?php endif; ?>
     </section>
     <footer>
@@ -7,7 +7,7 @@
     </footer>
     <?php Weapon::fire('cargo_after'); ?>
     <?php Weapon::fire('sword_before'); ?>
-    <?php echo Asset::javascript('assets/sword/main.js'); ?>
+    <?php echo Asset::javascript('assets/sword/layout.js'); ?>
     <?php Weapon::fire('sword_after'); ?>
     <?php Weapon::fire('SHIPMENT_REGION_BOTTOM'); ?>
   </body>

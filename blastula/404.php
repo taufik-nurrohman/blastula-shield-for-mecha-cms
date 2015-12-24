@@ -1,6 +1,6 @@
-<?php include 'header.php'; ?>
+<?php Shield::chunk('header'); ?>
 <article>
   <h2>:(</h2>
   <div><p>Not found.</p></div>
 </article>
-<?php include 'footer.php'; ?>
+<?php Shield::chunk('footer'); ?>
